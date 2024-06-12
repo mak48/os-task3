@@ -30,9 +30,9 @@ public class Main {
                 if (period.getYears()%10==0 || period.getYears()%10>4 || period.getYears()%100>10 && period.getYears()%100<15)
                     System.out.println("Возраст: "+period.getYears()+" лет");
                 else if (period.getYears()%10==1)
-                    System.out.println("Возраст: "+period.getYears()+" год");
+                    System.out.println("Возраст: "+period.getYears()+" год. До свидания");
                 else
-                    System.out.println("Возраст: "+period.getYears()+" года");
+                    System.out.println("Возраст: "+period.getYears()+" года. До свидания");
             }catch (DateTimeParseException e) {
                 System.out.println("Date in wrong format");
             }
