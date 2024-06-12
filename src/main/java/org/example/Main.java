@@ -18,7 +18,6 @@ public class Main {
             System.out.println("Пол: женский");
         else
             System.out.println("Пол: мужской");
-
         try {
             SimpleDateFormat df = new java.text.SimpleDateFormat("dd.MM.yyyy");
             df.setLenient(false);
