@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Введите фамилию, имя, отчество и дату в формате ДД.ММ.ГГГГ");
+        System.out.println("Здравствуйте! Введите фамилию, имя, отчество и дату в формате ДД.ММ.ГГГГ");
         Scanner scanner = new Scanner(System.in);
         String surname = scanner.next();
         String name = scanner.next();
@@ -18,7 +18,6 @@ public class Main {
             System.out.println("Пол: женский");
         else
             System.out.println("Пол: мужской");
-
         try {
             SimpleDateFormat df = new java.text.SimpleDateFormat("dd.MM.yyyy");
             df.setLenient(false);
@@ -31,9 +30,9 @@ public class Main {
                 if (period.getYears()%10==0 || period.getYears()%10>4 || period.getYears()%100>10 && period.getYears()%100<15)
                     System.out.println("Возраст: "+period.getYears()+" лет");
                 else if (period.getYears()%10==1)
-                    System.out.println("Возраст: "+period.getYears()+" год");
+                    System.out.println("Возраст: "+period.getYears()+" год. До свидания");
                 else
-                    System.out.println("Возраст: "+period.getYears()+" года");
+                    System.out.println("Возраст: "+period.getYears()+" года. До свидания");
             }catch (DateTimeParseException e) {
                 System.out.println("Date in wrong format");
             }
